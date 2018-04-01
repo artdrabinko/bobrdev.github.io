@@ -53,12 +53,8 @@
             <h1>the right ingredients<br />for the right food</h1>
             <img src="img/home-decoration.png" width="232" height="43" alt="">
             <div class="home-gr-btn">
-               <button class="btn-black">
-                  <a href="#">BOOK A TABLE</a>
-               </button>
-               <button class="btn-white">
-                  <a href="#">SEE THE MENU</a>
-               </button>
+               <a class="btn-black" href="#">BOOK A TABLE</a>
+               <a class="btn-white" href="#">SEE THE MENU</a>
             </div>
          </section>
          <section class="about retro-bg">
@@ -90,7 +86,7 @@
                </div>
             </div>
          </section>
-         <section class="menu retro-bg">
+         <section class="menu menu-retro-bg">
             <div class="menu-left-half">
                <div class="menu-group">
                   <h3 class="h3-gold">Appetisers</h3>
@@ -230,7 +226,7 @@
                         <label class="title-input" for="">Name</label>
                         <input type="text" name="user_name" id="" placeholder="your name *" required>
                      </div>
-                     <div class="input-container">
+                     <div class="input-container custom-date">
                         <label class="title-input" for="">Date</label>
                         <input type="text" name="user-date" placeholder="date *" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}" required>
                      </div>
@@ -238,9 +234,14 @@
                         <label class="title-input" for="">Email</label>
                         <input type="email" name="email" id="" placeholder="your email *" required>
                      </div>
-                     <div class="input-container">
-                        <label class="title-input" for="">Party Number</label>
-                        <input  type="number" name="party_number" id="" placeholder="party number *" required>
+                     <div class="input-container custom-select">
+                        <label class="title-input" for="">Party number</label>
+                        <select name="party_number">
+                              <option value="" disabled selected>party number *</option>
+                              <option value="1" >1</option>
+                              <option value="2" >2</option>
+                              <option value="3" >3</option>
+                        </select>
                      </div>
                   </div>
                   <button type="submit">Book now!</button>
